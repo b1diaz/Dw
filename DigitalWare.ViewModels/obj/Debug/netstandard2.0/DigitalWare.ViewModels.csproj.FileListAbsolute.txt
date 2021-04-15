@@ -1,0 +1,9 @@
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\bin\Debug\netstandard2.0\DigitalWare.ViewModels.deps.json
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\bin\Debug\netstandard2.0\DigitalWare.ViewModels.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\bin\Debug\netstandard2.0\DigitalWare.ViewModels.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.csprojAssemblyReference.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.AssemblyInfo.cs
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.ViewModels\obj\Debug\netstandard2.0\DigitalWare.ViewModels.pdb

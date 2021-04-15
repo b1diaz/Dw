@@ -1,0 +1,14 @@
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.Services.deps.json
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.Services.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.Services.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.csprojAssemblyReference.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.AssemblyInfoInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.AssemblyInfo.cs
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.csproj.CoreCompileInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.DataAccess.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.Models.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.DataAccess.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\bin\Debug\netstandard2.0\DigitalWare.Models.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.Services\obj\Debug\netstandard2.0\DigitalWare.Services.csproj.CopyComplete

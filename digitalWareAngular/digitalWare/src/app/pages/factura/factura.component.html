@@ -1,0 +1,132 @@
+<div class="content-block dx-card responsive-paddings">
+
+  <div style="display: inline-flex;width: 100%;">
+    <h2 style="margin-left: 0;" class="content-block">Facturas</h2>
+    <dx-button style="margin: auto;margin-right:0;" text="Nuevo" icon="add" type="danger" (onClick)="modalNuevo()">
+    </dx-button>
+  </div>
+
+
+  <dx-data-grid class="dx-card wide-card" [dataSource]="facturas" [showBorders]="false" [columnAutoWidth]="true"
+    [columnHidingEnabled]="true">
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+    <dxi-column dataField="id" caption="Id" [width]="50" dataType="number">
+    </dxi-column>
+
+    <dxi-column dataField="creado" caption="Fecha">
+    </dxi-column>
+
+    <dxi-column dataField="total" caption="Total" >
+    </dxi-column>
+
+    <dxi-column dataField="productoFactura.length" caption="N. Productos" dataType="number">
+    </dxi-column>
+
+  </dx-data-grid>
+
+
+
+
+  <!-- Modal Nuevo Vendedor -->
+  <dx-popup [width]="900" [height]="550" [showTitle]="true" title="Nueva Factura" [dragEnabled]="false"
+    [closeOnOutsideClick]="true" [(visible)]="popupNuevoVisible">
+    <dx-scroll-view #scrollView id="scrollview" scrollByContent=true showScrollbar="true">
+      <div>
+
+        <div class="dx-fieldset">
+          <!-- Vendedor -->
+          <div class="dx-field">
+            <div class="dx-field-label">Vendedor</div>
+            <div class="dx-field-value">
+              <dx-drop-down-box [(value)]="gridBoxValueVendedor" [(opened)]="isGridBoxOpenedVendedor" valueExpr="id"
+                [deferRendering]="false" [displayExpr]="gridBox_displayExpr" placeholder="Seleccione un Vendedor"
+                [showClearButton]="true" [dataSource]="vendedoresList"
+                (onOptionChanged)="onGridBoxOptionChanged($event, 'vendedores')">
+
+                <div *dxTemplate="let data of 'content'">
+                  <dx-data-grid [dataSource]="vendedoresList" [columns]="gridColumnsVendedor" [hoverStateEnabled]="true"
+                    [(selectedRowKeys)]="gridBoxValueVendedor" height="100%">
+                    <dxo-selection mode="single"></dxo-selection>
+                    <dxo-filter-row [visible]="true"></dxo-filter-row>
+                    <dxo-scrolling mode="virtual"></dxo-scrolling>
+                    <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+                  </dx-data-grid>
+                </div>
+              </dx-drop-down-box>
+            </div>
+          </div>
+
+          <!-- Clientes -->
+          <div class="dx-field">
+            <div class="dx-field-label">Cliente</div>
+            <div class="dx-field-value">
+              <dx-drop-down-box [(value)]="gridBoxValueCliente" [(opened)]="isGridBoxOpenedCliente" valueExpr="id"
+                [deferRendering]="false" [displayExpr]="gridBox_displayExpr" placeholder="Seleccione un cliente"
+                [showClearButton]="true" [dataSource]="clientesList"
+                (onOptionChanged)="onGridBoxOptionChanged($event, 'clientes')">
+
+                <div *dxTemplate="let data of 'content'">
+                  <dx-data-grid [dataSource]="clientesList" [columns]="gridColumnsCliente" [hoverStateEnabled]="true"
+                    [(selectedRowKeys)]="gridBoxValueCliente" height="100%">
+                    <dxo-selection mode="single"></dxo-selection>
+                    <dxo-filter-row [visible]="true"></dxo-filter-row>
+                    <dxo-scrolling mode="virtual"></dxo-scrolling>
+                    <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+                  </dx-data-grid>
+                </div>
+              </dx-drop-down-box>
+            </div>
+          </div>
+
+
+          <!-- Productos -->
+          <div class="dx-field">
+            <div class="dx-field-label">Producto</div>
+            <div class="dx-field-value">
+              <dx-drop-down-box [(value)]="gridBoxValueProducto" [(opened)]="isGridBoxOpenedProducto" valueExpr="id"
+                [deferRendering]="false" [displayExpr]="gridBox_displayExpr" placeholder="Seleccione un producto"
+                [showClearButton]="true" [dataSource]="productosList"
+                (onOptionChanged)="onGridBoxOptionChanged($event, 'productos')">
+
+                <div *dxTemplate="let data of 'content'">
+                  <dx-data-grid [dataSource]="productosList" [columns]="gridColumnsProducto" [hoverStateEnabled]="true"
+                    [(selectedRowKeys)]="gridBoxValueProducto" height="100%">
+                    <dxo-selection mode="single"></dxo-selection>
+                    <dxo-filter-row [visible]="true"></dxo-filter-row>
+                    <dxo-scrolling mode="virtual"></dxo-scrolling>
+                    <dxo-paging [enabled]="true" [pageSize]="10"></dxo-paging>
+                  </dx-data-grid>
+                </div>
+              </dx-drop-down-box>
+            </div>
+          </div>
+          <div class="dx-field">
+            <div class="dx-field-label">Cantidad</div>
+            <div class="dx-field-value">
+              <dx-number-box [(value)]="cantidad" placeholder="Cantidad"></dx-number-box>
+            </div>
+          </div>
+        </div>
+
+        <dx-button icon="check" type="success" (onClick)="agregarProducto()">
+        </dx-button>
+
+        <div style="padding: 10px; font-size:20px">
+          {{listaProductosCantidad}}
+          <span style="color:red"> Total: {{total}}</span>
+        </div>
+
+        <dx-button text="agregar factura" icon="check" (onClick)="agregarFactura()" type="success">
+        </dx-button>
+
+      </div>
+
+
+    </dx-scroll-view>
+
+  </dx-popup>
+
+</div>

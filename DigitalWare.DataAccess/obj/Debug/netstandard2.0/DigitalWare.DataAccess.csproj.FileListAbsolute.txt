@@ -1,0 +1,12 @@
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\bin\Debug\netstandard2.0\DigitalWare.DataAccess.deps.json
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\bin\Debug\netstandard2.0\DigitalWare.DataAccess.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.csprojAssemblyReference.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.AssemblyInfo.cs
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\bin\Debug\netstandard2.0\DigitalWare.DataAccess.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\bin\Debug\netstandard2.0\DigitalWare.Models.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\bin\Debug\netstandard2.0\DigitalWare.Models.pdb
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.csproj.CopyComplete
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.dll
+C:\Users\Diaz\Desktop\DigitalWare\DigitalWare.DataAccess\obj\Debug\netstandard2.0\DigitalWare.DataAccess.pdb

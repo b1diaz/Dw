@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FexDVmG4jim/+OIUx4C+kxoRd/J6aAQpEE+cj0VYBPL4CkeKZBWudGMdjhDRSze0g4jaNk6sweR0QTCM9ElBBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Diaz\\Desktop\\DigitalWare\\DigitalWare.ViewModels\\DigitalWare.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Diaz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Diaz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

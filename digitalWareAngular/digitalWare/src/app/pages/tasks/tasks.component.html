@@ -1,0 +1,107 @@
+<div class="content-block dx-card responsive-paddings">
+
+  <div style="display: inline-flex;width: 100%;">
+    <h2 style="margin-left: 0;" class="content-block">Clientes</h2>
+    <dx-button style="margin: auto;margin-right:0;" text="Nuevo" icon="add" type="danger" (onClick)="modalNuevo()">
+    </dx-button>
+  </div>
+
+
+  <dx-data-grid class="dx-card wide-card" [dataSource]="clientes" [showBorders]="false" [columnAutoWidth]="true"
+    [columnHidingEnabled]="true">
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+    <dxi-column dataField="id" caption="Id" dataType="number">
+    </dxi-column>
+    <dxi-column dataField="nombre" caption="Nombre">
+    </dxi-column>
+    <dxi-column dataField="apellido" caption="Apellido">
+    </dxi-column>
+    <dxi-column dataField="edad" caption="Edad" dataType="number" >
+    </dxi-column>
+    <dxi-column dataField="cedula" caption="Cedula" dataType="number">
+    </dxi-column>
+    <dxi-column dataField="frecuenciaCompra" caption="Frecuencia Compra" >
+    </dxi-column>
+    <dxi-column dataField="fechaUltimaCompra" caption="Fecha Ultima Compra" dataType="date">
+    </dxi-column>
+
+  </dx-data-grid>
+
+
+  <!-- Modal Nuevo Cliente -->
+  <dx-popup [width]="600" [height]="450" [showTitle]="true" title="Nuevo Cliente" [dragEnabled]="false"
+    [closeOnOutsideClick]="true" [(visible)]="popupNuevoVisible">
+    <dx-scroll-view #scrollView id="scrollview" scrollByContent=true showScrollbar="true">
+      <div>
+        <form name="formCliente" id="formCliente" (submit)="logSubmit($event)">
+          <dx-form [colCount]="2" [(formData)]="cliente" labelLocation="top">
+
+            <dxi-item editorType="dxTextBox" dataField="nombre" [label]="{text:'Nombre'}" message="Nombre es requerido"
+              type="required"></dxi-item>
+
+            <dxi-item dataField="apellido" message="Apellido es requerido">
+              <dxi-validation-rule type="required" message="Password is required"></dxi-validation-rule>
+            </dxi-item>
+
+            <dxi-item dataField="edad" editorType="dxNumberBox" message="Edad es requerida" type="required">
+                <dxi-validation-rule type="required" message="Password is required"></dxi-validation-rule>
+            </dxi-item>
+
+            <!-- <dxi-item [label]="{text:'Dilatación'}" dataField="dilatacion" editorType="dxNumberBox" [colSpan]="1"
+            placeholder="cm" [editorOptions]="{placeholder:'cm'}">
+            <dxi-validation-rule type="required"></dxi-validation-rule>
+            <dxi-validation-rule type="range" message="campo fuera del rango (5 a 10)" min="5" max="10">
+            </dxi-validation-rule>
+          </dxi-item> -->
+
+            <dxi-item dataField="cedula" editorType="dxNumberBox" message="Cedula es requerida" type="required">
+            </dxi-item>
+
+            <!-- Botones fromulario-->
+
+            <dxi-item text="Crear" icon="check" itemType="button" verticalAlignment="bottom"
+              [buttonOptions]="{stylingMode: 'contained', icon:'check', text: 'Registrar', type: 'success', useSubmitBehavior: true}">
+            </dxi-item>
+
+          </dx-form>
+        </form>
+      </div>
+    </dx-scroll-view>
+
+  </dx-popup>
+
+  <!--  <dx-data-grid class="dx-card wide-card" [dataSource]="dataSource" [showBorders]="false" [focusedRowEnabled]="true"
+    [focusedRowIndex]="0" [columnAutoWidth]="true" [columnHidingEnabled]="true">
+
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-pager [showPageSizeSelector]="true" [showInfo]="true"></dxo-pager>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+
+    <dxi-column caption="Nombre campo" dataField="Task_ID" [width]="90" [hidingPriority]="2">
+    </dxi-column>
+    <dxi-column dataField="Task_Subject" [width]="190" caption="Subject" [hidingPriority]="8">
+    </dxi-column>
+    <dxi-column dataField="Task_Status" caption="Status" [hidingPriority]="6">
+    </dxi-column>
+    <dxi-column dataField="Task_Priority" caption="Priority" [hidingPriority]="5">
+      <dxo-lookup [dataSource]="priority" valueExpr="value" displayExpr="name">
+      </dxo-lookup>
+    </dxi-column>
+    <dxi-column dataField="ResponsibleEmployee.Employee_Full_Name" caption="Assigned To" [allowSorting]="false"
+      [hidingPriority]="7">
+    </dxi-column>
+    <dxi-column dataField="Task_Start_Date" caption="Start Date" dataType="date" [hidingPriority]="3">
+    </dxi-column>
+    <dxi-column dataField="Task_Due_Date" caption="Due Date" dataType="date" [hidingPriority]="4">
+    </dxi-column>
+    <dxi-column dataField="Task_Priority" caption="Priority" name="Priority" [hidingPriority]="1">
+    </dxi-column>
+    <dxi-column dataField="Task_Completion" caption="Completion" [hidingPriority]="0">
+    </dxi-column>
+  </dx-data-grid>
+  -->
+
+</div>
